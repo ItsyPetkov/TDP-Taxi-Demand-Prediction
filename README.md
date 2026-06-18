@@ -21,3 +21,6 @@ An Exploratory Data Analysis script can be found [here](https://github.com/ItsyP
 A Data Cleaning script can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Cleaning%20Functions).
 
 Feature Engineering and Selection scripts can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main).
+
+Machine Learning models (only baseline and best) can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Training%20Functions).
+
