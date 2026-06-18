@@ -13,3 +13,5 @@ This project can be divided into the following workflow stages:
 * **Feature Engineering, Evaluation and Selection**: Obtained a feature set for training, optimising and testing machine learning models. Additionally, features were evaluated using visualisations and filter methods and selected or filtered out based on their importance.
 * **Data Modelling, Predictive Analysis and Model Comparison**: i) Developed a baseline model that emphasises overall accuracy; ii) Applied feature selection, sensitivity analysis and hyper-parameter optimisation to discover the best settings for the machine learning task; iii) Conducted an ablation study using multiple models to deduce which model performs best for the task based on confusion matrix outputs; and iv) Used train-test split to accurately train and evaluate model performance.  
 * **Result Reporting and Sharing**: A report has been produced to communicate model-driven insights and actionable recommendations to non-technical audiences.
+
+A static but detailed report can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main).
