@@ -19,3 +19,5 @@ A static but detailed report can be found [here](https://github.com/ItsyPetkov/T
 An Exploratory Data Analysis script can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files).  
 
 A Data Cleaning script can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Cleaning%20Functions).
+
+Feature Engineering and Selection scripts can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main).
