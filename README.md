@@ -24,3 +24,4 @@ Feature Engineering and Selection scripts can be found [here](https://github.com
 
 Machine Learning models (only baseline and best) can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Training%20Functions).
 
+Evaluation functions can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Evaluation%20Functions).
