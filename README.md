@@ -17,3 +17,5 @@ This project can be divided into the following workflow stages:
 A static but detailed report can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main).
 
 An Exploratory Data Analysis script can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files).  
+
+A Data Cleaning script can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Cleaning%20Functions).
