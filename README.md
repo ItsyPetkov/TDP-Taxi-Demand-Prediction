@@ -40,6 +40,22 @@ Below is a table that lists the original variable names in the csv-files, the va
 
 | **Original Name** | **New Name** | **Data Type** | **Description** |
 |-------------------|--------------|---------------|-----------------|
-| VendorID          | Vendor       | categorical   | A code indicating the TPEP provider that provided the record: 1= Creative Mobile Technologies, LLC 2= VeriFone Inc.    |
+| VendorID          | Vendor       | categorical   | A code indicating the TPEP provider that provided the record: 1= Creative Mobile Technologies, LLC 2= VeriFone Inc. |
 | tpep_pickup_datetime | PickupTime | datetime     | Start time of taxi trip |
 | tpep_dropoff_datetime | DropoffTime | datetime   | End time of taxi trip |
+| passenger_count | Passengers | double | Number of passengers during trip |
+| trip_distance | Distance | double | Distance of trip (in miles) |
+| pickup_longitude | PickupLon | double | Longitude of pickup location |
+| pickup_latitude | PickupLat | double | Latitude of pickup location |
+| RateCodeID | RateCode | categorical | The final rate code in effect at the end of the trip: 1= Standard rate 2=JFK 3=Newark 4=Nassau or Westchester 5=Negotiated fare 6=Group ride |
+| store_and_fwd_flag | HeldFlag | categorical | Y/N flag that indicates if trip data was transmitted immediately or transmitted later |
+| dropoff_longitude | DropoffLon | double | Longitude of drop off location |
+| dropoff_latitude | DropoffLat | double | Latitude of drop off location |
+| payment_type | PayType | categorical | A numeric code signifying how the passenger paid for the trip: 1= Credit card 2= Cash 3= No charge 4= Dispute 5= Unknown 6= Voided trip |
+| fare_amount | Fare | double | Time and distance fare calculated by the meter |
+| extra | ExtraCharge | double | Extra surcharges | 
+| mta_tax | Tax | double | MTA tax |
+| tip_amount | Tip | double | Tip amount for credit card purchases (cash tips are not included) |
+| tolls_amount | Tolls | double | Tolls paid on the trip |
+| improvement_surcharge | ImpSurcharge | double | Improvement surcharge |
+| total_amount | TotalCharge | double | Total charge to customers (excluding cash tips) |
