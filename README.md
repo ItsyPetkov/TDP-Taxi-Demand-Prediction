@@ -33,3 +33,5 @@ Individual metrics can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-De
 ## Data Structure Overview
 
 The primary data set for this project is a record of yellow taxi trips in New York City in 2015.  The data is collected by the NYC Taxi and Limousine Commission electronically through the Taxicab Passenger Enhancement Program (TPEP).  The data is made publicly available at [https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+
+The Taxi Data folder contains twelve csv-files, one for each month of the year. The data files provided are only 2% of the total data available, sampled at random. The full dataset for the year is over 20 GB.  Since processing this amount of data requires a significant amount of time and computational resources, the standard procedure of using a smaller sample, representative of the entire dataset is employed. 
