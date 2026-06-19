@@ -1,3 +1,5 @@
+addpath '/MATLAB Drive/Predictive Modeling and Machine Learning/Code Files/Evaluation Functions';
+
 taxiData = loadAndProcessTaxiData("Taxi Data");
 
 entireTaxiData = vertcat(taxiData{:});
