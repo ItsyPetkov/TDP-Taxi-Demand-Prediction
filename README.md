@@ -29,3 +29,7 @@ Evaluation functions can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-
 Additional feature functions can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Feature%20Functions).
 
 Individual metrics can be found [here](https://github.com/ItsyPetkov/TDP-Taxi-Demand-Prediction/tree/main/Code%20Files/Metrics%20Functions).
+
+## Data Structure Overview
+
+The primary data set for this project is a record of yellow taxi trips in New York City in 2015.  The data is collected by the NYC Taxi and Limousine Commission electronically through the Taxicab Passenger Enhancement Program (TPEP).  The data is made publicly available at [https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
