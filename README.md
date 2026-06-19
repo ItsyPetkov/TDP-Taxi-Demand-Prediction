@@ -37,3 +37,9 @@ The primary data set for this project is a record of yellow taxi trips in New Yo
 The Taxi Data folder contains twelve csv-files, one for each month of the year. The data files provided are only 2% of the total data available, sampled at random. The full dataset for the year is over 20 GB.  Since processing this amount of data requires a significant amount of time and computational resources, the standard procedure of using a smaller sample, representative of the entire dataset is employed. 
 
 Below is a table that lists the original variable names in the csv-files, the variable names used in this course when loaded into MATLAB, the data types, and descriptions of the variables.  This is adapted from the website linked above and is referred to as the data dictionary.  
+
+| **Original Name** | **New Name** | **Data Type** | **Description** |
+|-------------------|--------------|---------------|-----------------|
+| VendorID          | Vendor       | categorical   | A code indicating the TPEP provider that provided the record: 1= Creative Mobile Technologies, LLC 2= VeriFone Inc.    |
+| tpep_pickup_datetime | PickupTime | datetime     | Start time of taxi trip |
+| tpep_dropoff_datetime | DropoffTime | datetime   | End time of taxi trip |
