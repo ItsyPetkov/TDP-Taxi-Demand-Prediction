@@ -74,6 +74,13 @@ demand, explore the effect of feature selection and hyper-parameter optimization
 
 The baseline model used in this scenario is the Random Forest Classifier (Bagging Ensamble Method) in order to establish a general sense of model accuracy and feature importance for the machine learning algorithm described in Scenario 2. This particular model achieved an accuracy of 74.44% with K-fold validation (K=5) and no custom cost matrix.
 
+<img width="970" height="409" alt="image" src="https://github.com/user-attachments/assets/1a4ae85b-0d6e-45bd-8e34-0df2e409f2aa" />
+
+<img width="2651" height="1008" alt="image" src="https://github.com/user-attachments/assets/8a94a204-b88d-416a-ace8-6feac0634963" />
+
+In the images directly above, the model on the left is the baseline validated on training data, and the model on the right is the same model evaluated on test data.
+
 **Key findings**:
 * Several alternative approaches were discarded. Linear models (such as Multiclass Logistic Regression) consistently showed poor performance (accuracy below 70%), confirming that the relationships between the predictors and the response variable Demand are inherently nonlinear.
-* Categorical features offered little contribution to the final outcome, indicating that the prediction process is mainly governed by continuous data. 
+* Categorical features offered little contribution to the final outcome, indicating that the prediction process is mainly governed by continuous data.
+* The baseline model is prone to overfitting as suggested by the large discrepancy in accuracy scores between train and test data evaluations.
