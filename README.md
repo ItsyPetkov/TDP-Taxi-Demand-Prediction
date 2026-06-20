@@ -6,6 +6,10 @@ The New York City Taxi and Limousine Commission (TLC), established in 1971, is a
 
 This government agency produces significant amounts of yearly data on its trip origins and destinations, travel times, distances, passenger counts, fare structures, payment methods, and tipping behaviour that has previously been underutilised. This project thoroughly analyses and synthesises this data in order to discover critical insights that will improve the ability of TLC to model and subsequently predict the demand for their services throughout NYC.
 
+**Project goal**: Given taxi ride data in Manhattan, develop a prediction model to forecast demand (Low, Medium or High) for taxi rides in specific regions of interest (Lower Manhattan, Midtown, Upper West Side, Upper East Side, LaGuardia Airport and JFK Airport) throughout the city. 
+
+<img width="475" height="356" alt="image" src="https://github.com/user-attachments/assets/88df8a27-def7-4827-a103-483ac45e38be" />
+
 This project can be divided into the following workflow stages:
 
 * **Data Importing and Preprocessing**: Combined monthly taxi trip datasets and implemented custom taxi zone segmentation functions to map trips into predefined service regions.
