@@ -69,3 +69,11 @@ Below is a table that lists the original variable names in the csv-files, the va
 The modelling of the data and the subsequent predictions were a part of the classification problem described above, and different models were tried using the 
 Classification Learner App. Through trial and error, it was found that the Wide Neural Network model was the most appropriate, with an overall accuracy of around 76%. Two scenarios were considered: one to maximize overall accuracy (Scenario 1) and another to modify the cost matrix to minimize the misclassification of low 
 demand, explore the effect of feature selection and hyper-parameter optimization (Scenario 2).  In reality, both scenarios did not perform to the same degree, the first introduced significant overfitting, which was rectified in the second scenario, leading to an imporved ability to generalize to unseen data.
+
+### Scenario 1 - Baseline model
+
+The baseline model used in this scenario is the Random Forest Classifier (Bagging Ensamble Method) in order to establish a general sense of model accuracy and feature importance for the machine learning algorithm described in Scenario 2. This particular model achieved an accuracy of 74.44% with K-fold validation (K=5) and no custom cost matrix.
+
+**Key findings**:
+* Several alternative approaches were discarded. Linear models (such as Multiclass Logistic Regression) consistently showed poor performance (accuracy below 70%), confirming that the relationships between the predictors and the response variable Demand are inherently nonlinear.
+* Categorical features offered little contribution to the final outcome, indicating that the prediction process is mainly governed by continuous data. 
