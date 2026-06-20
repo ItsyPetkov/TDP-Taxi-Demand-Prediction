@@ -59,3 +59,9 @@ Below is a table that lists the original variable names in the csv-files, the va
 | tolls_amount | Tolls | double | Tolls paid on the trip |
 | improvement_surcharge | ImpSurcharge | double | Improvement surcharge |
 | total_amount | TotalCharge | double | Total charge to customers (excluding cash tips) |
+
+## Results and Evaluation Overview
+
+The modelling of the data and the subsequent predictions were a part of the classification problem described above, and different models were tried using the 
+Classification Learner App. Through trial and error, it was found that the Wide Neural Network model was the most appropriate, with an overall accuracy of around 76%. Two scenarios were considered: one to maximize overall accuracy (Scenario 1) and another to modify the cost matrix to minimize the misclassification of low 
+demand, explore the effect of feature selection and hyper-parameter optimization (Scenario 2).  In reality, both scenarios did not perform to the same degree, the first introduced significant overfitting, which was rectified in the second scenario, leading to an imporved ability to generalize to unseen data.
