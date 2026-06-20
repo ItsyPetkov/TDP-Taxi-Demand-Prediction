@@ -67,8 +67,8 @@ Below is a table that lists the original variable names in the csv-files, the va
 ## Results and Evaluation Overview
 
 The modelling of the data and the subsequent predictions were a part of the classification problem described above, and different models were tried using the 
-Classification Learner App. Through trial and error, it was found that the Wide Neural Network model was the most appropriate, with an overall accuracy of around 76%. Two scenarios were considered: one to maximize overall accuracy (Scenario 1) and another to modify the cost matrix to minimize the misclassification of low 
-demand, explore the effect of feature selection and hyper-parameter optimization (Scenario 2).  In reality, both scenarios did not perform to the same degree, the first introduced significant overfitting, which was rectified in the second scenario, leading to an imporved ability to generalize to unseen data.
+Classification Learner App. Through trial and error, it was found that the Wide Neural Network model was the most appropriate, with an overall accuracy of around 76%. Two scenarios were considered: one to maximise overall accuracy (Scenario 1) and another to modify the cost matrix to minimise the misclassification of low 
+demand, explore the effect of feature selection and hyper-parameter optimisation (Scenario 2).  In reality, both scenarios did not perform to the same degree, the first introduced significant overfitting, which was rectified in the second scenario, leading to an improved ability to generalise to unseen data.
 
 ### Scenario 1 - Baseline model
 
@@ -78,9 +78,24 @@ The baseline model used in this scenario is the Random Forest Classifier (Baggin
 
 <img width="2651" height="1008" alt="image" src="https://github.com/user-attachments/assets/8a94a204-b88d-416a-ace8-6feac0634963" />
 
-In the images directly above, the model on the left is the baseline validated on training data, and the model on the right is the same model evaluated on test data.
+In the images directly above, the model on the left is the baseline validated on training data, and the one on the right is the same model evaluated on test data.
 
 **Key findings**:
 * Several alternative approaches were discarded. Linear models (such as Multiclass Logistic Regression) consistently showed poor performance (accuracy below 70%), confirming that the relationships between the predictors and the response variable Demand are inherently nonlinear.
 * Categorical features offered little contribution to the final outcome, indicating that the prediction process is mainly governed by continuous data.
 * The baseline model is prone to overfitting as suggested by the large discrepancy in accuracy scores between train and test data evaluations.
+
+### Scenario 2 - Machine learning model ablation study 
+
+In this scenario, all of the machine learning models available in the Classification Learner App were applied to the prediction problem highlighted above and subsequently evaluated. A sensitivity analysis is conducted on the model with the highest accuracy to explore the effect of applying cost penalties for missclassifying different classes associated with the response variable.
+
+<img width="970" height="409" alt="image" src="https://github.com/user-attachments/assets/67a92a7a-b0e6-4557-87ab-3195c9a5ed07" />
+
+<img width="2651" height="1008" alt="image" src="https://github.com/user-attachments/assets/6d4f9e24-35da-4647-948a-8f833021e8aa" />
+
+In the images directly above, the model on the left is the best approach validated on training data, and the one on the right is the same model evaluated on test data.
+
+**Key findings**:
+* Applying an extreme cost penalty (such as 100) caused a severe and unacceptable reduction in overall accuracy.
+* Falsely identifying High demand or Medium demand regions as Low demand is not as much of an issue, hence the penalty is set to 5 instead of 1. This modified model achieved a lower accuracy of 66.6%. However, it significantly reduced the false negative counts for the Low class from 31.8% to 15%.
+* Hyperparameter optimisation failed to produce any meaningful improvement, with the model achieving only slight fluctuations (less than 1% difference) in terms of accuracy.
