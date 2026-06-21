@@ -198,3 +198,16 @@ Removing extreme outliers:
 * Bounding tax: Only include trips with tax between 0 and 5.
 * Bounding tip: Only include trips with tip between 0 and 145 inclusively at both bounds.
 * Bounding total charge: Only include trips with total charge between 0.5 and 175 inclusively at both bounds.
+
+### Post Data Cleaning EDA
+
+Once the data has been cleaned, the focus shifts to discovering how different variables are related. This is achieved by ustilising a correlation heatmap and a set of scatter plots for variables of interest.
+
+<img width="967" height="792" alt="image" src="https://github.com/user-attachments/assets/c07ce247-71ba-47cb-b415-956a06c07504" />
+
+
+Based on the image above, it is clear that most of the features are strongly positively correlated, with a few being weakly negatively correlated. This is further evident in the following scatter plots:
+
+<img width="839" height="993" alt="image" src="https://github.com/user-attachments/assets/6fc23955-63e8-4bd1-8f1f-0fb6e221dbc7" />
+
+Just from observing the scatter plots, it can be deduced that the feature on the Y-axis increases with an increase in the X-axis variable. This type of behaviour will prove useful for future feature engineering. 
