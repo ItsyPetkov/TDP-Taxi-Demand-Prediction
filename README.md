@@ -244,6 +244,8 @@ dataset of shape 55043x13 to be involved in the machine learning process.
 
 ## Recommendations
 
+It is recommended to adopt the modified Wide Neural Network model for deployment, due to its superior accuracy and ability to generalise to unseen data. Its high accuracy and ability to correctly identify low-demand areas directly supported the objective of enhancing driver efficiency by minimising the risk of travelling to a region with little to no business. The model is functionally more valuable and safer from a financial perspective for the driver.
+
 ## Limitations
 
 Despite the relatively high-quality analysis provided above, it is still prone to the following limitations:
