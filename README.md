@@ -103,3 +103,69 @@ In the images directly above, the model on the left is the best approach validat
 ## EDA-based Insights and Predictive Features
 
 This section gives an overview of the exploratory data analysis carried out before and after data cleaning to identify relationships between variables and use those insights to inform feature engineering and subsequent feature selection for the machine learning task outlined above.
+
+### Initial Exploratory Data Analysis
+
+The summary of the initial data provided below indicated the presence of missing, incorrect and inconsistent data. Specifically, negative values for Fare and TotalCharge have been observed, as well as Trips being recorded with no Distance or Passengers. Additionally, extremely large outliers have been presented for the trip Distance and various types of Charges, indicating erroneously recorded data. Such observations are removed from the dataset as they skew the distributions of the continuous variables, which will lead to incorrect predictions during the machine learning stage.  
+
+entireTaxiData: 2922266×25 table
+
+Variables:
+
+    Vendor: categorical (2 categories)
+    PickupTime: datetime
+    DropoffTime: datetime
+    Passengers: double
+    Distance: double
+    PickupLon: double
+    PickupLat: double
+    RateCode: categorical (7 categories)
+    HeldFlag: categorical (2 categories)
+    DropoffLon: double
+    DropoffLat: double
+    PayType: categorical (5 categories)
+    Fare: double
+    ExtraCharge: double
+    Tax: double
+    Tip: double
+    Tolls: double
+    ImpSurcharge: double
+    TotalCharge: double
+    tzPickupBorough: categorical (6 categories)
+    tzDropoffBorough: categorical (6 categories)
+    PickupZone: categorical (260 categories)
+    DropoffZone: categorical (260 categories)
+    PickupRegion: categorical (7 categories)
+    DropoffRegion: categorical (7 categories)
+
+Statistics for applicable variables:
+
+                        NumMissing              Min                      Median                       Max                       Mean                   Std      
+
+    Vendor                    0                                                                                                                                 
+    PickupTime                0         2015-01-01 00:00:43        2015-06-20 18:21:55        2015-12-31 23:59:59        2015-06-26 17:39:48        2523:42:17  
+    DropoffTime               0         2015-01-01 00:04:02        2015-06-20 18:35:14        2016-01-01 22:10:58        2015-06-26 17:55:12        2523:43:09  
+    Passengers                0                           0                          1                          9                     1.6818            1.3345  
+    Distance                  0                           0                     1.7100                   14680110                    16.9731        1.1447e+04  
+    PickupLon                 0                   -171.7973                   -73.9817                          0                   -72.8054            9.2250  
+    PickupLat                 0                           0                    40.7529                    69.7026                    40.1069            5.0816  
+    RateCode                  0                                                                                                                                 
+    HeldFlag                  0                                                                                                                                 
+    DropoffLon                0                   -171.7973                   -73.9797                          0                   -72.8543            9.0322  
+    DropoffLat                0                           0                    40.7534                   456.3667                    40.1348            4.9813  
+    PayType                   0                                                                                                                                 
+    Fare                      0                        -150                     9.5000                 4.1027e+05                    13.0519          240.3651  
+    ExtraCharge               0                    -45.2000                          0                   579.7200                     0.3145            0.6008  
+    Tax                       0                     -1.7000                     0.5000                    80.3500                     0.4976            0.0727  
+    Tip                       0                     -2.7000                     1.1600                        650                     1.7030            2.6018  
+    Tolls                     0                         -15                          0                   911.0800                     0.3085            1.6619  
+    ImpSurcharge              0                     -0.3000                     0.3000                     0.3000                     0.2983            0.0235  
+    TotalCharge               0                   -150.8000                    11.8000                 4.1027e+05                    16.1771          240.5124  
+    tzPickupBorough       48799                                                                                                                                 
+    tzDropoffBorough      51915                                                                                                                                 
+    PickupZone            48799                                                                                                                                 
+    DropoffZone           51915                                                                                                                                 
+    PickupRegion              0                                                                                                                                 
+    DropoffRegion             0                                                                                                                                 
+
+Further visualisations in support of the EDA conducted for this project are available in the final report.
