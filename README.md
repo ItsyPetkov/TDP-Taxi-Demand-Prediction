@@ -211,3 +211,19 @@ Based on the image above, it is clear that most of the features are strongly pos
 <img width="839" height="993" alt="image" src="https://github.com/user-attachments/assets/6fc23955-63e8-4bd1-8f1f-0fb6e221dbc7" />
 
 Just from observing the scatter plots, it can be deduced that the feature on the Y-axis increases with an increase in the X-axis variable. This type of behaviour will prove useful for future feature engineering. 
+
+### Feature Engineering
+
+The following variables were produced based on the scatter plots above or in order to facilitate the machine learning process used to produce the result described in the previous section. It is also important to note that these are by no means the only variables that could be engineered to help solve this classification problem.
+
+* FarePerMile = Fare / Distance
+* FarePerMinute = Fare / Duration
+* DistanceXHour = Distance * TimeOfDay
+* FareXDistance = Fare * Distance
+
+Additional variables include:
+* NetPickups = PickupCount - DropoffCount
+* isHoliday, which returns true if a trip is on a holiday data and false otherwise
+* Demand, produced  by discretising the NetPickups variable into the bins (-Inf, 0, 15, Inf) and producing the following  categories: "Low", "Medium", "High". This results in the following categorical response variable: 1)  Net Pickups < 0: ‘Low’; 2)  0 <= Net Pickups < 15: ‘Medium’; and 3) Net Pickups >= 15: ‘High’
+
+More information regarding this process can be found in the report.
