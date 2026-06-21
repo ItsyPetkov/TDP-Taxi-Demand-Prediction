@@ -99,3 +99,7 @@ In the images directly above, the model on the left is the best approach validat
 * Applying an extreme cost penalty (such as 100) caused a severe and unacceptable reduction in overall accuracy.
 * Falsely identifying High demand or Medium demand regions as Low demand is not as much of an issue, hence the penalty is set to 5 instead of 1. This modified model achieved a lower accuracy of 66.6%. However, it significantly reduced the false negative counts for the Low class from 31.8% to 15%.
 * Hyperparameter optimisation failed to produce any meaningful improvement, with the model achieving only slight fluctuations (less than 1% difference) in terms of accuracy.
+
+## EDA-based Insights and Predictive Features
+
+This section gives an overview of the exploratory data analysis carried out before and after data cleaning to identify relationships between variables and use those insights to inform feature engineering and subsequent feature selection for the machine learning task outlined above.
