@@ -227,3 +227,17 @@ Additional variables include:
 * Demand, produced  by discretising the NetPickups variable into the bins (-Inf, 0, 15, Inf) and producing the following  categories: "Low", "Medium", "High". This results in the following categorical response variable: 1)  Net Pickups < 0: ‘Low’; 2)  0 <= Net Pickups < 15: ‘Medium’; and 3) Net Pickups >= 15: ‘High’
 
 More information regarding this process can be found in the report.
+
+### Feature Selection
+
+This section focuses on establishing the importance of the features for machine learning and their subsequent selection. To achieve this, a famous filter feature selection algorithm called MRMR was employed.
+
+<img width="2420" height="838" alt="image" src="https://github.com/user-attachments/assets/ab1e6b6d-e851-43e5-9590-4e1547301d02" />
+
+As can be seen from the image above, it appears that discrete and continuous variables are ranked significantly higher than categorical variables. This behavior warrens further investigation using Pareto charts and random 
+forest models to gauge feature importance. After training, validating, testing and evaluating the ensemble method of choice, this was the output feature importance produced by the Random Forest model.
+
+<img width="1694" height="1270" alt="image" src="https://github.com/user-attachments/assets/7d3baaa0-5639-4b64-9b1a-5a3ac780eec3" />
+
+The results indicate that the categorical variable "isHoliday" offers little to no weight in terms of prediction quality and is hence removed from the feature set, leaving a final 
+dataset of shape 55043x13 to be involved in the machine learning process.
