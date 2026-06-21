@@ -169,3 +169,32 @@ Statistics for applicable variables:
     DropoffRegion             0                                                                                                                                 
 
 Further visualisations in support of the EDA conducted for this project are available in the final report.
+
+### Data Cleaning and Pre-processing
+
+The rough outline presented below indicates what has been implemented in terms of data cleaning, however bare in mind that this is by no means an exhaustive list of instructions:
+
+Removing invalid values:
+* Valid Passenger Count: Include all trips with at least one passenger.
+* Valid Distance Value: Include all trips with distance larger than 0.
+* Valid Rate Code Category: Include all trips with Rate Code Category value different from "99".
+* Valid Fare Value: Include all trips with fare larger than 0.
+* Valid Extra Charge Value: Include all trips with extra charge greater or equal to 0.
+* Valid Tax Value: Include all trips with tax larger than 0.  
+* Valid Tip Value: Include all trips with tips greater or equal to 0.
+* Valid Toll Value: Include all trips with tolls greater or equal to 0.   
+* Valid Charge Value: Include all trips with charges greater or equal to 0.
+* Valid Total Charge Value: Include all trips with total charge larger than 0. 
+* Valid Lon and Lat Values: Include all trips with Lon and Lat values different from 0.
+
+Removing extreme outliers:
+* Bounding region of interest: Only include trips with Lon and Lat values within Region Of Interest (ROI).
+* Bounding duration: Only include trips with distance between 1 and 120 in minutes inclusively at both bounds.
+* Bounding average speed: Only include trips with average speed between 0.1 and 100 mile per hour inclusively at both bounds.
+* Bounding distance: Only include trips with distance between 0.01 and 400 miles inclusively at both bounds.
+* Bounding fare: Only include trips with fare between 2.50 and 140 inclusively at both bounds.
+* Bounding tolls: Only include trips with tolls greater or equal to 20.
+* Bounding extra charge: Only include trips with extra charge between 0 and 3.
+* Bounding tax: Only include trips with tax between 0 and 5.
+* Bounding tip: Only include trips with tip between 0 and 145 inclusively at both bounds.
+* Bounding total charge: Only include trips with total charge between 0.5 and 175 inclusively at both bounds.
