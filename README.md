@@ -241,3 +241,20 @@ forest models to gauge feature importance. After training, validating, testing a
 
 The results indicate that the categorical variable "isHoliday" offers little to no weight in terms of prediction quality and is hence removed from the feature set, leaving a final 
 dataset of shape 55043x13 to be involved in the machine learning process.
+
+## Recommendations
+
+## Limitations
+
+Despite the relatively high-quality analysis provided above, it is still prone to the following limitations:
+
+* **Sampling Detail**: The initial data is a sample of a much larger dataset, as such it may not have captured all of the relationships, patterns or trends available within the data.
+* **Primitive models**: This work utilises only primitive machine learning models available within the Classification Learner App in MATLAB, however prediction quality could benefit from the exploration of more sophisticated deep learning models.
+
+## Future Work and Considerations
+
+To build upon this work, the following steps could be considered in the future:
+
+* **Explore Other Algorithms**: Investigate different or more complex machine learning models (e.g., ensemble methods like Random Forest or Gradient Boosting) to see if both high accuracy and a low false-negative rate for the "Low" class can be achieved simultaneously.
+* **Incorporate Additional Data**: Enhance the model by including external factors that influence taxi demand, such as weather data, information on public holidays and major events (concerts, sports), and real-time traffic conditions.
+* **Expand Geographic Scope**: Once the model is refined, it could be expanded to cover additional regions within New York City to provide a more comprehensive tool for drivers.
