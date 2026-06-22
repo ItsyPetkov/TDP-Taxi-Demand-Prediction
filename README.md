@@ -1,5 +1,22 @@
 # TDPNYC: Taxi Demand Prediction for yellow-taxi cabs in New York City. 
 
+## Table of Contents
+
+- [Project background and Overview](#project-background-and-overview)
+- [Data Structure Overview](#data-structure-overview)
+- [Results and Evaluation Overview](#results-and-evaluation-overview)
+  - [Scenario 1 - Baseline model](#scenario-1---baseline-model)
+  - [Scenario 2 - Machine learning model ablation study](#scenario-2---machine-learning-model-ablation-study)
+- [EDA-based Insights and Predictive Features](#eda-based-insights-and-predictive-features)
+  - [Initial Exploratory Data Analysis](#initial-exploratory-data-analysis)
+  - [Data Cleaning and Pre-processing](#data-cleaning-and-pre-processing)
+  - [Post Data Cleaning EDA](#post-data-cleaning-eda)
+  - [Feature Engineering](#feature-engineering)
+  - [Feature Selection](#feature-selection)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [Future Work and Considerations](#future-work-and-considerations)
+
 ## Project background and Overview
 
 The New York City Taxi and Limousine Commission (TLC), established in 1971, is a government agency that regulates and licenses the taxi and for-hire transportation industry of the city.
